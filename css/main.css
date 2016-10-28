@@ -6,49 +6,14 @@ body {
 	font-family: 'Roboto Slab', serif;
 	background-color: #9dcdff;
 	font-size: 16px;
+	min-height: 5000px;
 }
 
 main {
 	position: absolute;
 	top: 0; right: 0; bottom: 0; left: 0;
 	overflow: hidden;
-}
-
-
-/* Header and Navigation */
-
-header {
-	text-align: center;
-}
-
-.nav-list {
-	list-style-type: none;
-	display: inline-block;
-	text-align: center;
-	z-index: 1;
-	position: relative;
-	margin: 0;
-	padding: 0;
-}
-
-.nav-list li {
-	display: inline-block;
-}
-
-.nav-list li a {
-	display: inline-block;
-	text-decoration: none;
-	color: #fff;
-	padding: 10px;
-	text-align: center;
-}
-
-.nav-list-title {
-	display: block;
-}
-
-.nav-list-image {
-
+	position: fixed;
 }
 
 
@@ -71,8 +36,86 @@ header {
 	max-width: 100%;
 }
 
+.city-info {
+	opacity: 0;
+	transition: 600ms all ease;
+	transform: scale(0);
+	transform-origin: bottom center;
+	background-color: rgba(71, 151, 202, 0.47);
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    top: -190px;
+}
+
+.city-info.visible {
+	opacity: 1;
+	transform: scale(1);
+}
+
 #city-montreal {
 	right: 0;
+}
+
+.city-bubble {
+	position: absolute;
+    top: 80px;
+    left: -40px;
+    opacity: 0;
+	transition: 600ms all ease;
+	transform: scale(0);
+}
+
+.city-bubble.visible {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	background-color: red;
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Water */
+
+.water-wave {
+	position: absolute;
+	right: 0; bottom: 0; left: 0;
+	background-image: url(../img/wave.png);
+	background-repeat: repeat-x;
+	background-size: 200px;
+	animation: wave 1500ms infinite linear;
+	opacity: 0.8;
+	transform: translate3d(0,0,0);
+}
+
+.water-wave-2 {
+	animation: wave 3000ms infinite linear;
+	filter: brightness(90%);
+	background-size: 200px;
+	opacity: 0.7;
+}
+
+.water-wave-1 {
+	animation: wave 4500ms infinite linear;
+	filter: brightness(80%);
+	background-size: 200px;
+	opacity: 0.9;
+}
+
+/* Animations */
+
+@keyframes wave {
+    0%   {background-position: 0 -1px;}
+    100% {background-position: 200px -1px;}
 }
 
 

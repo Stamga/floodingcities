@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 766 1701.8">
+  <defs>
+    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#3FA9F5"/>
+      <stop offset="100%" stop-color="#1570B1"/>
+    </linearGradient>
+      <style>
+        .cls-1{
+          fill:url(#gradient);;
+        }</style>
+  </defs>
+  <path class="cls-1" d="M766,1721H0V169.2c210.9,0,215-150,383-150s174.8,150,383,150Z" transform="translate(0 -19.2)"/>
+</svg>
