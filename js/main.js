@@ -2,7 +2,7 @@
 
 var scrollLocation = 0;
 var windowHeight = 0;
-var maxScroll = 5000;
+var maxScroll = 10000;
 var currentYear = 2016;
 
 var yearEl = $('.year-number');
