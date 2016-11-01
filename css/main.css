@@ -109,10 +109,18 @@ main {
 }
 
 .city-single.completed .city-title {
-	left: 90%;
-    bottom: -30px;
     transform: scale(0.6) translate3d(0,0,0);
     transition-delay: 600ms;
+}
+
+.city-single.completed#city-venice .city-title {
+	left: 90%;
+    bottom: -30px;
+}
+
+.city-single.completed#city-bangkok .city-title {
+	left: 70%;
+    bottom: 100px;
 }
 
 .city-single.completed .city-title h4 {

@@ -26,6 +26,7 @@ $(window).scroll(function ()
 {
 	init();
 	toggleCity(cityVenice, isAtYear(2091,2119), isAtYear(2091));
+	toggleCity(cityBangkok, isAtYear(2121,2151), isAtYear(2121));
 });
 
 function init () 
