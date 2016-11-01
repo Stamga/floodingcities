@@ -25,48 +25,11 @@ $(window).scroll(function ()
 {
 	init();
 
-	if(isAtPercent(20,35)) 
-	{
-		cityMontreal.find('.city-info').addClass('visible');
-		cityMontreal.find('.city-bubble').addClass('visible');
-	}
-
-	if(isAtPercent(35,50)) 
-	{
-		cityMontreal.find('.city-info').removeClass('visible');
-		cityVenice.find('.city-info').addClass('visible');
-
-		cityVenice.find('.city-bubble').addClass('visible');
-	}
-
-	if(isAtPercent(50,65)) 
-	{
-		cityVenice.find('.city-info').removeClass('visible');
-		cityBangkok.find('.city-info').addClass('visible');
-
-		cityBangkok.find('.city-bubble').addClass('visible');
-	}
-
-	if(isAtPercent(65,80)) 
-	{
-		cityBangkok.find('.city-info').removeClass('visible');
-		cityAmsterdam.find('.city-info').addClass('visible');
-
-		cityAmsterdam.find('.city-bubble').addClass('visible');
-	}
-
-	if(isAtPercent(80,95)) 
-	{
-		cityAmsterdam.find('.city-info').removeClass('visible');
-		cityFrancisco.find('.city-info').addClass('visible');
-
-		cityFrancisco.find('.city-bubble').addClass('visible');
-	}
-
-	else 
-	{
-		//cityMontreal.find('.city-bubble').removeClass('visible');
-	}
+	toggleCity(cityMontreal, isAtPercent(20,35));
+	toggleCity(cityVenice, isAtPercent(35,50));
+	toggleCity(cityBangkok, isAtPercent(50,65));
+	toggleCity(cityAmsterdam, isAtPercent(65,80));
+	toggleCity(cityFrancisco, isAtPercent(80,95));
 });
 
 function init () 
@@ -75,6 +38,20 @@ function init ()
 	windowHeight = $(window).height();
 	waterLevel();
 	shiftYear();
+}
+
+function toggleCity(city, isVisible)
+{
+	if(isVisible)
+	{
+		city.find('.city-info').addClass('visible');
+		city.find('.city-bubble').addClass('visible');
+	}
+	else
+	{
+		city.find('.city-info').removeClass('visible');
+		city.find('.city-bubble').removeClass('visible');
+	}
 }
 
 function waterLevel () 
