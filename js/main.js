@@ -24,12 +24,7 @@ $(function()
 $(window).scroll(function () 
 {
 	init();
-
-	toggleCity(cityMontreal, isAtPercent(20,35));
 	toggleCity(cityVenice, isAtPercent(35,50));
-	toggleCity(cityBangkok, isAtPercent(50,65));
-	toggleCity(cityAmsterdam, isAtPercent(65,80));
-	toggleCity(cityFrancisco, isAtPercent(80,95));
 });
 
 function init () 
