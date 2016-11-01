@@ -18,13 +18,13 @@ var cityVenice = $('#city-venice');
 
 $(function() 
 {
+	setTimeout(function(){ window.scrollTo(0, 0); }, 5);
 	init();
 });
 
 $(window).scroll(function () 
 {
 	init();
-
 	toggleCity(cityMontreal, isAtPercent(20,35));
 	toggleCity(cityVenice, isAtPercent(35,50));
 	toggleCity(cityBangkok, isAtPercent(50,65));
@@ -56,9 +56,9 @@ function toggleCity(city, isVisible)
 
 function waterLevel () 
 {
-	wave1.css({ 'top': pxToPercent(scrollLocation)+'%'});
-	wave2.css({ 'top': pxToPercent(scrollLocation*0.8)+'%'});
-	wave3.css({ 'top': pxToPercent(scrollLocation*0.6)+'%'});
+	wave1.css({ 'top': pxToPercent(scrollLocation)-5+'%'});
+	wave2.css({ 'top': pxToPercent(scrollLocation*0.8)-5+'%'});
+	wave3.css({ 'top': pxToPercent(scrollLocation*0.6)-5+'%'});
 }
 
 function shiftYear() 
