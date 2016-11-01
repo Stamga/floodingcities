@@ -58,6 +58,22 @@ main {
 	right: 0;
 }
 
+#city-venice {
+	right: 325px;
+}
+
+#city-bangkok {
+	right: 650px;
+}
+
+#city-amsterdam {
+	right: 975px;
+}
+
+#city-francisco {
+	right: 1300px;
+}
+
 .city-bubble {
 	position: absolute;
     top: 80px;
