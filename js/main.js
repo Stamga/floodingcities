@@ -27,12 +27,6 @@ $(function()
 $(window).scroll(function () 
 {
 	init();
-	toggleAction(scrollIndicator, isAtYear(2015,2080));
-	toggleAction(cityVenice, isAtYear(2091,2119), isAtYear(2091));
-	toggleAction(cityBangkok, isAtYear(2121,2151), isAtYear(2121));
-	toggleAction(scrollIndicator, isAtYear(2015,2080));
-	toggleAction(main, isAtYear(2500,2600));
-
 });
 
 function init () 
@@ -41,6 +35,12 @@ function init ()
 	windowHeight = $(window).height();
 	waterLevel();
 	shiftYear();
+
+	toggleAction(scrollIndicator, isAtYear(2015,2080));
+	toggleAction(cityVenice, isAtYear(2091,2119), isAtYear(2091));
+	toggleAction(cityBangkok, isAtYear(2121,2151), isAtYear(2121));
+	toggleAction(scrollIndicator, isAtYear(2015,2080));
+	toggleAction(main, isAtYear(2500,2600));
 }
 
 function toggleAction(city, isVisible, isVisibleAfter)
