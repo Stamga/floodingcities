@@ -164,6 +164,21 @@ main.detailed .city-single.completed .city-title h4 {
     bottom: 100px;
 }
 
+.city-single.completed#city-amsterdam .city-title {
+	left: 45%;
+    bottom: 300px;
+}
+
+.city-single.completed#city-sanfrancisco .city-title {
+	left: 30%;
+    bottom: 400px;
+}
+
+.city-single.completed#city-shangai .city-title {
+	left: 20%;
+    bottom: 510px;
+}
+
 .city-single.completed .city-title h4 {
 	opacity: 0;
 }

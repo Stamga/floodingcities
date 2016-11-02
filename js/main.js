@@ -12,10 +12,10 @@ var wave3 = $('.water-wave-3');
 
 var scrollIndicator = $('#intro-text');
 var main = $('main');
-var cityMontreal = $('#city-montreal');
+var cityShangai = $('#city-shangai');
 var cityBangkok = $('#city-bangkok');
 var cityAmsterdam = $('#city-amsterdam');
-var cityFrancisco = $('#city-francisco');
+var cityFrancisco = $('#city-sanfrancisco');
 var cityVenice = $('#city-venice');
 
 $(function() 
@@ -37,8 +37,13 @@ function init ()
 	shiftYear();
 
 	toggleAction(scrollIndicator, isAtYear(2015,2080));
+	
 	toggleAction(cityVenice, isAtYear(2091,2119), isAtYear(2091));
 	toggleAction(cityBangkok, isAtYear(2121,2151), isAtYear(2121));
+	toggleAction(cityAmsterdam, isAtYear(2166,2196), isAtYear(2166));	
+	toggleAction(cityFrancisco, isAtYear(2216,2246), isAtYear(2216));
+	toggleAction(cityShangai, isAtYear(2416,2436), isAtYear(2416));
+
 	toggleAction(scrollIndicator, isAtYear(2015,2080));
 	toggleAction(main, isAtYear(2500,2600));
 }
