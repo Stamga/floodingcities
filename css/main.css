@@ -9,6 +9,11 @@ body {
 	min-height: 100000px;
 }
 
+section
+{
+	margin-bottom : 75px;
+}
+
 h1 {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 700;
@@ -216,7 +221,7 @@ main.detailed .city-single.completed .city-title h4 {
 	position: relative;
     padding: 0 159px;
     margin: 0 90px;
-    margin-bottom : 90px;
+    margin-bottom : 35px;
 }
 
 .city-info .arrow-left {
@@ -314,7 +319,7 @@ main.detailed .city-single.completed .city-title h4 {
 
 .quick-fix
 {
-	margin-bottom : 35px;
+	margin-bottom : 0px;
 }
 
 /* Animations */
